@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/IM_divider_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_line" />
+
+    <ImageView
+        android:id="@+id/IM_bg_header_top"
+        android:layout_width="2dip"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/IM_divider_horizontal_line1"
+        android:layout_below="@+id/IM_divider_horizontal_line"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_header_top" />
+
+    <ImageView
+        android:id="@+id/IM_bg_header_top1"
+        android:layout_width="2dip"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/IM_divider_horizontal_line1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/IM_divider_horizontal_line"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_header_top" />
+
+    <TextView
+        android:id="@+id/Tv_Hospital_name"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/IM_divider_horizontal_line"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/Hospital_name"
+        android:textColor="#737373"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Tv_Registered_information_document"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/Tv_Hospital_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/Registered_information_document"
+        android:textColor="#737373"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Tv_Serial_number"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Registered_information_document"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Serial_number"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Prescription_number"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Registered_information_document"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/Tv_Serial_number"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Prescription_number"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/IM_line_x"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Tv_Serial_number"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_x" />
+
+    <TextView
+        android:id="@+id/Tv_Patient_name"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/IM_line_x"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Patient_name"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_sex_age"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/IM_line_x"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/Tv_Patient_name"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/sex_age"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Outpatient_category"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Patient_name"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Outpatient_category"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Division"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Patient_name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/Tv_Outpatient_category"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Division"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Visiting_time"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Outpatient_category"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Visiting_time"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Doctor_name"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Visiting_time"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Doctor_name"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_The_consultation"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Visiting_time"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/Tv_Doctor_name"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/The_consultation"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Registration_fee"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Doctor_name"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Registration_fee"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Fee"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Doctor_name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/Tv_Registration_fee"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Fee"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/IM_line_x1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Tv_Registration_fee"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_x" />
+
+    <TextView
+        android:id="@+id/Tv_Registered_member"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/IM_line_x1"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Registered_member"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Tv_Registration_date"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/IM_line_x1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/Tv_Registered_member"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/Registration_date"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/BT_Cancel_the_interrogation"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Registered_member"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/editsharp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/Cancel_the_interrogation"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/BT_Inquiry_into"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Tv_Registered_member"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/BT_Cancel_the_interrogation"
+        android:background="@drawable/editsharp1"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/Inquiry_into"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/IM_divider_horizontal_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/BT_Cancel_the_interrogation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_line" />
+
+</RelativeLayout><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/layout/interrogation.xml -->

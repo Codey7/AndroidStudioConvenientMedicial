@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/top"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#20AF65" >
+
+            <TextView
+                android:id="@+id/now_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="您当前不在队列中"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+<!--             <TextView
+                android:id="@+id/quene_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/now_ing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="您前面还有：  8 人"
+                android:textColor="#ffffff"
+                android:textSize="15sp" /> -->
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editsharp3"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/Ib_back"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/leftarrow" />
+
+        <TextView
+            android:id="@+id/Tv_Payment_method"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Payment_method"
+            android:textColor="#4B4B4B"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/IM_line_x"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/Tv_Payment_method"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/line_x" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IM_line_x"
+            android:layout_centerInParent="true" >
+
+            <RadioGroup
+                android:id="@+id/Rg_car_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" >
+
+                <RadioButton
+                    android:id="@+id/RB_Alipay"
+                    style="@style/RadioButtonStyles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Alipay"
+                    android:checked="true"
+                    android:textSize="20sp" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/RB_UnionPay_payment"
+                    style="@style/RadioButtonStyles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/UnionPay_payment"
+                    android:textSize="20sp" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/RB_Social_security_card"
+                    style="@style/RadioButtonStyles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Social_security_card"
+                    android:textSize="20sp" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/RB_Quick_payment"
+                    style="@style/RadioButtonStyles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Quick_payment"
+                    android:textSize="20sp" >
+                </RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/BT_sure"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Rg_car_select"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/editsharp1"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="@string/sure"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/layout/payment_method.xml -->

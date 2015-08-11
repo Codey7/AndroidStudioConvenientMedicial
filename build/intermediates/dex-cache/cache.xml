@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\ConvenientMedicial\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="F:\ConvenientMedicial\app\build\intermediates\pre-dexed\debug\classes-1d6b7a047cdb120000760297e1b0455ebbd36dbe.jar" />
+    </item>
+    <item
+        jar="E:\Android\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="F:\ConvenientMedicial\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-e0158972eaebfe90d2b5dc0facc1e10ef5052e22.jar" />
+    </item>
+    <item
+        jar="F:\ConvenientMedicial\app\libs\zixing-core-3.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="F:\ConvenientMedicial\app\build\intermediates\pre-dexed\debug\zixing-core-3.2.0-b9c5f33c2406f2e1a845fcb819552952f777152c.jar" />
+    </item>
+    <item
+        jar="F:\ConvenientMedicial\app\libs\HttpsVolley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9f766e86b8a6a663e189a2036e20d57b1fca8fdd">
+        <dex dex="F:\ConvenientMedicial\app\build\intermediates\pre-dexed\debug\HttpsVolley-df74aa987281ade0a227382cb124224212f39292.jar" />
+    </item>
+    <item
+        jar="F:\ConvenientMedicial\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="F:\ConvenientMedicial\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-4fc987afb2418daef2cc6800f4b4e67e71356330.jar" />
+    </item>
+
+</items>

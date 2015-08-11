@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="6dp" />
+
+            <stroke android:width="3px" android:color="#0F6137" />
+
+            <solid android:color="#0F6137" />
+        </shape></item>
+    <item android:state_pressed="false"><shape android:shape="rectangle">
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="6dp" />
+
+            <stroke android:width="3px" android:color="#20AF65" />
+
+            <solid android:color="#20AF65" />
+        </shape></item>
+
+</selector><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/drawable/editsharp1.xml -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+     android:shape="rectangle" >
+    <padding
+        android:bottom="7dp"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="7dp" />
+    <corners android:radius="6dp" />
+
+    <stroke
+        android:width="3px"
+        android:color="#D2D2D2" />
+
+    <solid android:color="#F5F5F5" />
+
+</shape><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/drawable/editstyle.xml -->

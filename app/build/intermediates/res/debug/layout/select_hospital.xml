@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#20AF65" >
+
+        <TextView
+            android:id="@+id/tv_select_hos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/select_hos"
+            android:textColor="#F5F5F5"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/Ib_back_to_main"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/leftarrow" />
+    </RelativeLayout>
+    <ListView 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/select_hospital_list"
+        ></ListView>
+
+</LinearLayout>
+<!-- From: file:/F:/ConvenientMedicial/app/src/main/res/layout/select_hospital.xml -->

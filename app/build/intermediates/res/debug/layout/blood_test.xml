@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/top"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#20AF65" >
+
+            <TextView
+                android:id="@+id/now_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="您当前不在队列中"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+<!--             <TextView
+                android:id="@+id/quene_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/now_ing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="您前面还有：  8 人"
+                android:textColor="#ffffff"
+                android:textSize="15sp" /> -->
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/IM_divider_horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider_horizontal_line" />
+
+        <ImageView
+            android:id="@+id/IM_bg_header_top"
+            android:layout_width="2dip"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/IM_divider_horizontal_line1"
+            android:layout_below="@+id/IM_divider_horizontal_line"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_header_top" />
+
+        <ImageView
+            android:id="@+id/IM_bg_header_top1"
+            android:layout_width="2dip"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/IM_divider_horizontal_line1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/IM_divider_horizontal_line"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_header_top" />
+
+        <ImageButton
+            android:id="@+id/Ib_left"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/Tv_test_blood"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/leftarrow" />
+
+        <TextView
+            android:id="@+id/Tv_test_blood"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IM_divider_horizontal_line"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/test_blood"
+            android:textColor="#323232"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/IM_line_x"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/Tv_test_blood"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/line_x" />
+
+        <TextView
+            android:id="@+id/Tv_Check_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IM_line_x"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="@string/Check_state"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Check_state_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IM_line_x"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:text="@string/Check_state_result"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Check_place"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Check_state"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="@string/Check_place"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Check_place_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Check_state"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="@string/Check_place_result"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Cost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Check_place"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="@string/Cost"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Cost_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Check_place"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="￥7"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Payment_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Cost"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="@string/Payment_status"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Payment_status_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Cost"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="@string/Payment_status_result"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Sign_in_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Payment_status"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="@string/Sign_in_state"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Tv_Sign_in_state_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Tv_Payment_status"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="@string/Sign_in_state_result"
+            android:textColor="#4B4B4B"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/BT_Inspection_report"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Tv_Sign_in_state"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/editsharp1"
+            android:gravity="center"
+            android:text="@string/Inspection_report"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/IM_divider_horizontal_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/BT_Inspection_report"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider_horizontal_line" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/layout/blood_test.xml -->

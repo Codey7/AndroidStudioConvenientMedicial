@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Bt_register"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:text="@string/register"
+        android:textColor="#20AF65"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Bt_nolanding"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:text="@string/onlanding"
+        android:textColor="#20AF65"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/Iv_logo"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#20AF65"
+        android:layout_centerHorizontal="true"
+        android:text="微 诊" />
+
+    <EditText
+        android:id="@+id/Et_username"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/app_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editstyle"
+        android:ems="10"
+        android:hint="@string/Cell_phone_number"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/Et_password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Et_username"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editstyle"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/BT_landing"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Et_password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/editsharp1"
+        android:text="@string/landing"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/Iv_logo"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/Bt_nolanding"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/Bt_register"
+        android:background="@null"
+        android:padding="0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_login" />
+
+</RelativeLayout><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/layout/log_in.xml -->

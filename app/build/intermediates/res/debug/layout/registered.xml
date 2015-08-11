@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Tv_remind"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/Iv_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/remind"
+        android:textColor="#BFBFBF"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Iv_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editstyle"
+        android:ems="10"
+        android:hint="手机号码"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/Et_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Et_phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editstyle"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="姓名"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/Et_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Et_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="numberPassword"
+        android:background="@drawable/editstyle"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:hint="身份证"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/Et_password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Et_idcard"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/editstyle"
+        android:digits="0123456789-"
+        android:ems="11"
+        android:inputType="numberPassword"
+        android:hint="密码"
+        android:singleLine="true" />
+        <EditText
+        android:id="@+id/Et_again_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Et_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/editstyle"
+        android:digits="0123456789-"
+        android:ems="11"
+        android:inputType="numberPassword"
+        android:hint="确认密码"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/Iv_logo"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Tv_remind"
+        android:background="@null"
+        android:padding="0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_signup" />
+
+    <Button
+        android:id="@+id/BT_register"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Et_again_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/editsharp1"
+        android:text="@string/register"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/layout/registered.xml -->

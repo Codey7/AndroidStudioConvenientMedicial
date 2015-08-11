@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">   
+<!-- 连框颜色值 --><item>   
+      <shape>   
+            <solid android:color="#D5D5D5" />   
+      </shape>   
+</item>   
+<!-- 主体背景颜色值 -->  
+<item android:bottom="1dp" android:right="1dp" android:top="1dp">   
+     <shape android:shape="rectangle">   
+           <solid android:color="#F5F5F5" />  
+             
+           <padding android:bottom="8dp"  
+                android:left="8dp"  
+                android:right="8dp"  
+                android:top="8dp" />  
+                <corners android:topRightRadius="1dp"
+        android:bottomRightRadius="1dp" />
+     </shape>       
+</item>  
+</layer-list>  
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+     android:shape="rectangle" >
+    <padding
+        android:bottom="7dp"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="7dp" />
+    设置圆角矩形
+    <corners android:topRightRadius="3dp"
+        android:bottomRightRadius="3dp" />
+
+    <stroke
+        android:width="3px"
+        android:color="#D2D2D2" />
+
+    <solid android:color="#F5F5F5" />
+
+</shape> --><!-- From: file:/F:/ConvenientMedicial/app/src/main/res/drawable/editsharp2.xml -->

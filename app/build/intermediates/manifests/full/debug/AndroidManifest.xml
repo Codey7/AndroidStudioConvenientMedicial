@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.convenientmedical.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.convenientmedical.net.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_main"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.convenientmedical.main.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.convenientmedical.main.MainActivity" />
+        <activity android:name="com.convenientmedical.search.DoctorSearchResult" />
+        <activity android:name="com.convenientmedical.main.SignUpActivity" />
+        <activity android:name="com.convenientmedical.main.LogIn" />
+        <activity android:name="com.convenientmedical.main.SelectDoctorList" />
+        <activity android:name="com.convenientmedical.main.SelectCard" />
+        <activity android:name="com.convenientmedical.main.SelectAreaList" />
+        <activity android:name="com.convenientmedical.main.SelectHosActivity" />
+        <!-- <activity android:name="com.convenientmedical.main.RegistratInfo"></activity> -->
+        <activity android:name="com.convenientmedical.pay.PayDetails" />
+        <activity android:name="com.convenientmedical.main.RegVoucher" />
+        <activity android:name="com.convenientmedical.main.SelectDepartmentActivity" />
+        <activity android:name="com.convenientmedical.me.SocialCard" />
+        <activity android:name="com.convenientmedical.pay.PayMethod" />
+        <activity android:name="com.convenientmedical.diagnoses.IllDetailsActivity" />
+        <activity android:name="com.convenientmedical.diagnoses.IllDetailsResportActivity" />
+        <activity android:name="com.convenientmedical.me.MyInfo" />
+        <activity android:name="com.convenientmedical.me.MyHistory" />
+        <activity android:name="com.convenientmedical.me.MyBankCard" />
+        <activity android:name="com.convenientmedical.me.AddBankCard" />
+        <activity android:name="com.convenientmedical.diagnoses.DecodeQRCode" />
+        <activity android:name="com.convenientmedical.main.NavViewActivity" />
+        <activity android:name="com.convenientmedical.pay.AliPay" />
+        <activity android:name="com.convenientmedical.me.MyCase" />
+    </application>
+
+</manifest>

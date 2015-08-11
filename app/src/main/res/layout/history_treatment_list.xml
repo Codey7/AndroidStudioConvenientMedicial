@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+<RelativeLayout
+            android:id="@+id/top"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#20AF65" >
+
+            <TextView
+                android:id="@+id/now_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="您当前不在队列中"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+<!--             <TextView
+                android:id="@+id/quene_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/now_ing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="您前面还有：  8 人"
+                android:textColor="#ffffff"
+                android:textSize="15sp" /> -->
+        </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/IM_bg_header_top"
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_header_top" />
+
+    <ImageView
+        android:id="@+id/IM_bg_header_top2"
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_header_top" />
+
+    <TextView
+        android:id="@+id/Tv_History_treatment_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="0dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="@string/History_treatment_list"
+        android:textColor="#4A4a4a"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/Ib_left"
+        android:layout_width="10dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/leftarrow" />
+
+    <ImageView
+        android:id="@+id/IM_divider_horizontal_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Tv_History_treatment_list"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_line" />
+
+    <ListView 
+        android:layout_below="@+id/IM_divider_horizontal_line1"
+        android:id="@+id/history_list"
+        android:longClickable="false"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#20AF65" >
+
+        <TextView
+            android:id="@+id/Tv_select_area"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#20AF65"
+            android:gravity="center"
+            android:text="挂号信息"
+            android:textColor="#F5F5F5"
+            android:textSize="22sp" />
+
+        <!-- <ImageButton
+            android:id="@+id/Ib_back"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/leftarrow" /> -->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/IM_divider_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_line" />
+
+    <ImageView
+        android:id="@+id/IM_bg_header_top"
+        android:layout_width="2dip"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/IM_divider_horizontal_line1"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_header_top" />
+
+    <ImageView
+        android:id="@+id/IM_bg_header_top1"
+        android:layout_width="2dip"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/IM_divider_horizontal_line1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_header_top" />
+
+    <TextView
+        android:id="@+id/Tv_Hospital_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IM_divider_horizontal_line"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/Hospital_name"
+        android:textColor="#4A4A4A"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Tv_Registered_information_document"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Hospital_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/Registered_information_document"
+        android:textColor="#4A4A4A"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Tv_Serial_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Registered_information_document"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="@string/Serial_number"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Prescription_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Tv_Registered_information_document"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="@string/Prescription_number"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/IM_line_x"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Tv_Serial_number"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_x" />
+
+    <TextView
+        android:id="@+id/Tv_Patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IM_line_x"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="@string/Patient_name"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IM_line_x"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/Tv_age"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="@string/sex_age"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/IM_line_x"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="年龄：20"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Outpatient_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Patient_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="@string/Outpatient_category"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Tv_Patient_name"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="@string/Division"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Visiting_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Outpatient_category"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="@string/Visiting_time"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Visiting_time"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="@string/Doctor_name"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_The_consultation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Tv_Visiting_time"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="@string/The_consultation"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Registration_fee"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Doctor_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="@string/Registration_fee"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Tv_Doctor_name"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="@string/Fee"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/IM_line_x1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Tv_Registration_fee"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_x" />
+
+    <TextView
+        android:id="@+id/Tv_Registered_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IM_line_x1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="@string/Registered_member"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Registration_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/IM_line_x1"
+        android:layout_marginRight="40dp"
+        android:layout_alignTop="@+id/Tv_Registered_member"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="@string/Registration_date"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+<RelativeLayout 
+    android:id="@+id/rl_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_below="@+id/Tv_Registered_member"
+    android:layout_marginLeft="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    >
+    <Button
+        android:id="@+id/BT_Cancel_registration"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/editsharp"
+        android:gravity="center"
+        android:text="@string/Cancel_registration"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/BT_To_pay_for"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/BT_Cancel_registration"
+        android:background="@drawable/editsharp1"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:text="@string/To_pay_for"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</RelativeLayout>
+    
+
+    <ImageView
+        android:id="@+id/IM_divider_horizontal_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rl_button"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizontal_line" />
+
+</RelativeLayout>
