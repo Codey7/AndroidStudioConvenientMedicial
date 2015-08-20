@@ -20,7 +20,7 @@ import android.widget.SimpleAdapter;
 
 public class MyHistory extends Activity {
 	private ListView mListView;
-	private HashMap<String, String> mHash;
+	private HashMap<String, String> mHash = new HashMap<>();
 	private List<HashMap<String, String>> mList;
 
 	@Override
@@ -29,7 +29,7 @@ public class MyHistory extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.history_treatment_list);
 		mListView = (ListView) findViewById(R.id.history_list);
-		mList = new ArrayList<HashMap<String, String>>();
+		mList = new ArrayList<>();
 		addData();
 		setAdapter();
 		mListView.setOnItemClickListener(new OnItemClickListener() {
@@ -46,15 +46,15 @@ public class MyHistory extends Activity {
 	}
 
 	private void addData() {
-		mHash = new HashMap<String, String>();
+		mHash = new HashMap<>();
 		mHash.put("time", "2015/6/1");
 		mHash.put("hospital", "东方医院");
 		mList.add(mHash);
-        mHash = new HashMap<String, String>();
-        mHash.put("time", "2015/6/1");
-        mHash.put("hospital", "东方医院");
-        mList.add(mHash);mHash = new HashMap<String, String>();
-        mHash.put("time", "2015/6/1");
+        mHash = new HashMap<>();
+        mHash.put("time", "2015/7/1");
+        mHash.put("hospital", "杭州市人民医院");
+        mList.add(mHash);mHash = new HashMap<>();
+        mHash.put("time", "2015/8/1");
         mHash.put("hospital", "东方医院");
         mList.add(mHash);
 
