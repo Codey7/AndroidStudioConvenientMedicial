@@ -1,0 +1,4 @@
+# AndroidStudioConvenientMedicial
+使用android studio编译
+服务外包国赛项目
+便捷医疗系统
